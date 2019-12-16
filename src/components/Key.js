@@ -1,6 +1,6 @@
 import React from "react";
 
-const Key = ({ data }) => {
+const Key = ({ data, performCalculation }) => {
   return (
     <>
       <div
@@ -19,6 +19,7 @@ const Key = ({ data }) => {
             backgroundColor: "transparent",
             width: "100%"
           }}
+          onClick={() => performCalculation(data.value)}
         >
           <h2 style={{ textAlign: "center", color: "white" }}>{data.value}</h2>
         </button>
