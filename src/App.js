@@ -52,10 +52,7 @@ function App() {
             transform: "translate(-50%, -50%)"
           }}
         >
-          <CalculatorDisplay
-            performCalculation={performCalculation}
-            result={result}
-          />
+          <CalculatorDisplay result={result} />
           {/* performCalculation is being passed down as props to KeyPad */}
           <KeyPad
             result={result}
